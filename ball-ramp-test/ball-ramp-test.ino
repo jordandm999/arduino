@@ -2,7 +2,7 @@
 
 const int buttonPin = 2;
 const int servoPin = 9;
-const unsigned long gateOpenDuration = 450; // ms to hold gate open
+const unsigned long gateOpenDuration = 475; // ms to hold gate open
 
 Servo myServo;
 
