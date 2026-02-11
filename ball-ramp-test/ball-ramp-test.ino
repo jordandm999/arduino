@@ -2,7 +2,7 @@
 
 const int buttonPin = 2;
 const int servoPin = 9;
-const unsigned long gateOpenDuration = 475; // ms to hold gate open
+const unsigned long gateOpenDuration = 250; // ms to hold gate open
 
 Servo myServo;
 
@@ -23,7 +23,7 @@ void loop() {
   // Detect button press (HIGH to LOW edge)
   if (buttonState == LOW && lastButtonState == HIGH) {
     Serial.println("GATE OPEN");
-    myServo.write(90);
+    myServo.write(45);
     delay(gateOpenDuration);
     myServo.write(0);
     Serial.println("GATE CLOSED");
